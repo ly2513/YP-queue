@@ -1,0 +1,11 @@
+{
+    "name": "yongli/yp-queue",
+    "description": "yp-queue is Queue components of YPPHP Framework",
+    "authors": [
+        {
+            "name": "ly2513",
+            "email": "626375290@qq.com"
+        }
+    ],
+    "require": {}
+}
