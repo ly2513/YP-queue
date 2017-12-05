@@ -1,0 +1,23 @@
+{
+    "name": "ly2513/yp-queue",
+    "description": "yp-queue is Queue components of YPPHP Framework",
+    "keywords": ["ypphp","queue"],
+    "homepage": "https://github.com/ly2513/redis-queue",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "gaofeng",
+            "email": "626375290@qq.com",
+            "homepage": "http://www.liyongweb.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RedisQueue": "src"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
