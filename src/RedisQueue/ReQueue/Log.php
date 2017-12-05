@@ -19,11 +19,10 @@ class Log
      *
      * Log constructor.
      *
-     * @param string $logPath
      */
-    public function __construct($logPath)
+    public function __construct()
     {
-        $this->logPath = $logPath ? $logPath : '';
+        $this->logPath = $_SERVER['LOGPATH'] ?? '';
         is_dir($this->logPath) or mkdir($this->logPath, 0777, true);
         $this->logFile = $this->logPath . 'queue_' . date('Y-m-d', time()) . '.log';
         is_file($this->logFile) or touch($this->logFile);
