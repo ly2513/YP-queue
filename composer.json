@@ -15,7 +15,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "RedisQueue": "src"
+            "RedisQueue\\": "src"
         }
     },
     "minimum-stability": "dev",
