@@ -7,7 +7,6 @@
  * Email: liyong@addnewer.com
  */
 namespace RedisQueue\ReQueue;
-use Con\Queue;
 
 class Log
 {
@@ -17,11 +16,14 @@ class Log
 
     /**
      * 配置日志初始化目录与文件
+     *
      * Log constructor.
+     *
+     * @param string $logPath
      */
-    public function __construct()
+    public function __construct($logPath)
     {
-        $this->logPath = Queue::$logPath;
+        $this->logPath = $logPath ? $logPath : '';
         is_dir($this->logPath) or mkdir($this->logPath, 0777, true);
         $this->logFile = $this->logPath . 'queue_' . date('Y-m-d', time()) . '.log';
         is_file($this->logFile) or touch($this->logFile);
