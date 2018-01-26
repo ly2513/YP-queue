@@ -191,7 +191,7 @@ class Job
      * associated with the job with the supplied arguments.
      *
      * @return bool
-     * @throws ResQueue_Exception When the job's class could not be found or it does not contain a perform method.
+     * @throws QueueException
      */
     public function perform()
     {
